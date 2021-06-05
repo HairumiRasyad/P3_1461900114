@@ -25,7 +25,7 @@ class RasyadController extends Controller
      */
     public function create()
     {
-        //
+        return view('rasyad_tambah');
     }
 
     /**
@@ -36,7 +36,12 @@ class RasyadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Rasyad::create([
+            'nbi' => $request->nbi,
+            'nama_mhs' => $request->nama_mhs,
+        ]);
+
+        
     }
 
     /**

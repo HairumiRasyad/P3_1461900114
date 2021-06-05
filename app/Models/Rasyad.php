@@ -10,4 +10,10 @@ class Rasyad extends Model
     use HasFactory;
 
     protected $table = 'rasyad';
+
+    protected $fillable = [
+        'id',
+        'nbi',
+        'nama_mhs',
+    ];
 }
